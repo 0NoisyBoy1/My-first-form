@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title >Where would you go next summer</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <h1 id="title">Where would you go next summer</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <!-- field completare date nume prenume email parola -->
+      <fieldset>
+        <label for="first-name" id="name-label">Enter Your First Name: <input id="name" name="first-name" type="text" placeholder="..." required /></label>
+        <label for="last-name" id="name-label">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="..." required /></label>
+        <label for="email-label" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="..." required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}"  required /></label>
+         <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="..." /></label>
+      </fieldset>
+        <!-- field completare date cont personal termeni conditii plm -->
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal account" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business account"/> Business Account</label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="terms-and-conditions"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+        <!-- field plaje preferate-->
+        <fieldset>
+          <!-- Aroa beach, Casa di peroni by cafe del mar, Venus beach, jupiter beach -->
+          <p>What was your favourite beach?</p>
+          <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline" value="obelisk beach" /> Obelisk beach</label>
+          <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" value="fratelli beach"/> Fratelli beach</label>
+          <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" value="aroa beach"/> Aroa beach</label>
+          <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" value="casa Di Peroni By Cafe Del Mar beach"/> Casa Di Peroni By Cafe Del Mar beach</label>
+          <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" value="venus beach"/> Venus beach</label>
+        <!-- field completare date varsta poza bio -->
+      <fieldset>
+        <label for="profile-picture">How would your ideal party place look? <input id="profile-picture" type="file" name="file" /></label>
+        <!-- location-->
+        <label for="referrer">What location would you choose to party next summer?
+          <select id="dropdown" name="drodown">
+            <option value="" disabled selected value>(select one)</option>
+            <option value="1">Breeze Mamaia</option>
+            <option value="2">Alezzi Yacht</option>
+            <option value="3">Gossip Costinesti</option>
+            <option value="4">Stuf Vama Veche</option>
+          </select>
+        </label>
+          <!-- recenzii -->
+        <label for="bio">Tell us what was your best moment last summer:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I liked club M&G because..."></textarea>
+        </label>
+      </fieldset>
+        <!-- field submit -->
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
